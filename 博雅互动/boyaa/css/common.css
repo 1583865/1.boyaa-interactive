@@ -1,0 +1,114 @@
+/*公共样式  一般设置头部  底部区域的相同样式  书写一次css文件可以多次调用*/
+/*a标签*/
+a {
+	text-decoration: none;
+	color: #333;
+}
+/*版心*/
+.inner {
+	width: 1000px;
+	/*块级元素 水平居中*/
+	margin: 0 auto;
+}
+/*header样式*/
+.header {
+	/*通栏大黑条*/
+	height: 58px;
+	background-color: #191D3A;
+}
+.header .inner .logo {
+	/*同级元素  并排显示还设置宽高  一定是浮动*/
+	float: left;
+	/*盒模型减法*/
+	width: 205px;
+	height: 48px;
+	/*父子之间有距离使用padding*/
+	padding: 10px 0px 0px 20px;
+}
+.header .inner .logo a {
+	/*行内元素  不能设置宽高*/
+	display: block;
+	width: 157px;
+	height: 35px;
+	/*使用背景图../   相对路径：从当前文件出发common，去查找目标图片logo*/
+	background-image: url(../images/logo.png);
+	/*文字是给爬虫看的用户千万不能看到*/
+	text-indent: -999em;
+	overflow: hidden;
+}
+.header .inner .nav {
+	/*同级元素要浮动一定都浮动*/
+	float: left;
+	width: 626px;
+	height: 58px;
+}
+.header .inner .nav ul li {
+	float: left;
+	width: 85px;
+	height: 58px;
+	border-left: 1px solid #252947;
+}
+/*特殊样式  比如加入我们*/
+.header .inner .nav ul li.join {
+	width: 100px;
+	height: 46px;
+	/*父子有距离使用padding*/
+	padding: 12px 0px 0px 9px;
+}
+.header .inner .nav ul li.join a {
+	width: 98px;
+	height: 32px;
+	background-color: #38B774;
+	border: 1px solid #3ACA7A;
+	border-radius: 3px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	line-height: 32px;
+}
+/*cur轮换类名*/
+.header .inner .nav ul li.cur a {
+	background-color: #252947;
+	color: #fff;
+}
+.header .inner .nav ul li a {
+	/*尽量范围大点*/
+	display: block;
+	height: 58px;
+	text-align: center;
+	line-height: 58px;
+	font-size: 12px;
+	color: #818496;
+}
+.header .inner .lang {
+	float: right;
+	/*浮动的元素脱标 如果不设置宽度，是内容撑开*/
+	height: 58px;
+	font-size: 12px;
+	line-height: 58px;
+}
+.header .inner .lang a {
+	margin-right: 13px;
+	/*a标签文字颜色和下划线不能从祖先继承  必须单独设置*/
+	color: #424863;
+}
+.header .inner .lang a.on {
+	color: #38B774;
+}
+/*固定定位   position:fixed;   1脱标原位置不保留   2参考的浏览器窗口的四个顶点
+	压盖顺序：有定位的元素压盖住没有定位的元素
+*/
+.top {
+	position: fixed;
+	bottom: 74px;
+	right: 20px;
+	width: 68px;
+	height: 29px;
+	background: url(../images/top.png) no-repeat 0px -40px;
+	cursor: pointer;
+}
+.top:hover {
+	background-position: 0px 0px;
+}
+
+

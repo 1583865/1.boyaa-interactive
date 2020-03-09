@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<!-- css部署  由于css有层叠性   引入css文件一定要注意先后顺序 -->
+	<!-- 1引入清除文件  不用自己书写 reset.css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+	<!-- 2 可以引入原子类文件-->
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+
+	<!-- 3 公共样式 common.css 需要自己书写 便于代码重复使用-->
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+
+	<!-- 4 单页面的样式  最后引入比如 首页那么就只有首页才引入Index.css -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<!-- header开始 -->
+	<div class="header">
+		<div class="inner">
+			<!-- 同级logo+nav+lang -->
+			<h1 class="logo">
+				<!-- target:页面打开方式   新标签页打开   title鼠标悬停提示文本-->
+				<a href="http://www.boyaa.com/index.html" target="_blank" title="博雅互动首页">博雅互动</a>
+			</h1>
+			<div class="nav">
+				<ul>
+					<li class="cur"><a href="">首页</a></li>
+					<li><a href="">博雅游戏</a></li>
+					<li><a href="">博雅新闻</a></li>
+					<li><a href="">关于我们</a></li>
+					<li><a href="">客服中心</a></li>
+					<li><a href="">投资者关系</a></li>
+					<li class="join"><a href="">加入我们</a></li>
+				</ul>
+			</div>
+			<div class="lang">
+				<a href="" class="">中文</a>
+				<a href="" class="on nomargin">EN</a>
+			</div>
+		</div>
+	</div>
+	<!-- header结束 -->
+
+	<!-- banner开始 -->
+	<div class="banner">
+		<div class="ban-inner">
+			<!-- 标题 -->
+			<div class="title">
+				<img src="images/icon07.png" alt="" />
+				<div class="txt">
+					<h3>德州扑克</h3>
+					<h6>BOYAA TEXAS POKER</h6>
+				</div>
+				<div class="ongame">
+					<dl>
+						<dt>在线游戏</dt>
+						<dd>
+							<a href=""></a>
+							<a href="" class="no2"></a>
+							<a href=""></a>
+							<a href=""></a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<p>与其说德州扑克是一种扑克游戏，倒不如说德州扑克是一种心理游戏，你的心理足够强大吗？</p>
+			<h4>下载游戏：</h4>
+			<ul>
+				<li><a href="">iPad</a></li>
+				<li class="apple"><a href="">iPad</a></li>
+				<li><a href="">iPad</a></li>
+				<li><a href="">iPad</a></li>
+				<li class="nomargin pic">
+					<!-- 插入图片 不设置宽高  默认是原尺寸 -->
+					<img src="images/erweima.jpg" alt="" />
+				</li>
+			</ul>
+		</div>
+		<div class="circles">
+			<ol>
+				<li class="cur"></li>
+				<li class="nomargin"></li>
+			</ol>
+		</div>
+	</div>
+	<!-- banner结束 -->
+
+	<!-- content内部开始 -->
+	<div class="content inner">
+		<div class="list">
+			<div>
+				<img src="images/video.jpg" alt="" />
+				<h5>博雅宣传视频</h5>
+				<!-- span设置小三角 让文本水平居中 -->
+				<p>点击播放<span></span></p>
+			</div>
+			<div>
+				<img src="images/video.jpg" alt="" />
+				<h5>博雅宣传视频</h5>
+				<p>点击播放<span></span></p>
+			</div>
+			<div>
+				<img src="images/video.jpg" alt="" />
+				<h5>博雅宣传视频</h5>
+				<p>MAHIONG GAMES<span></span></p>
+			</div>
+			<div class="nomargin">
+				<img src="images/video.jpg" alt="" />
+				<h5>博雅宣传视频</h5>
+				<p>BOYAA CHESS<span></span></p>
+			</div>
+		</div>
+		<!-- 边线 -->
+		<div class="line">
+			<ol>
+				<li class="cur"></li>
+				<li></li>
+			</ol>
+		</div>
+	</div>
+	<!-- content内部结束 -->
+
+
+	<!-- 新闻和招聘开始 -->
+	<div class="footer-content">
+		<div class="inner">
+			<div class="news">
+				<div class="title">
+					<a href="">MORE<i>+</i></a>
+				</div>
+				<ul>
+					<li>
+						<a href="">博雅互动公布2018年中期业绩，巩固现有市场地位，加大力度拓展海外市场及其他棋牌游戏业务</a>
+						<span>11/13</span>
+					</li>
+					<li>
+						<a href="">博雅互务</a>
+						<span>11/13</span>
+					</li>
+					<li>
+						<a href="">博雅互动业务</a>
+						<span>11/13</span>
+					</li>
+					<li>
+						<a href="">巩固现有市场地位，加大力度拓展海外市场及其他棋牌游戏业务</a>
+						<span>11/13</span>
+					</li>
+				</ul>
+			</div>
+			<div class="job">2</div>
+		</div>
+	</div>
+	<!-- 新闻和招聘结束 -->
+
+	<!-- top固定定位 -->
+	<div class="top"></div>
+
+	
+</body>
+</html>
